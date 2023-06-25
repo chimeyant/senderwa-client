@@ -329,15 +329,23 @@ export default {
         align: "start",
         sortable: false,
         value: "sender_number",
+        width: 150,
       },
       {
         text: "PENERIMA",
         align: "start",
         sortable: false,
         value: "recieve_number",
+        width: 150,
       },
       { text: "PESAN", value: "content" },
-
+      {
+        text: "STATUS",
+        align: "center",
+        sortable: false,
+        value: "status",
+        width: 150,
+      },
       {
         text: "AKSI",
         value: "id",
