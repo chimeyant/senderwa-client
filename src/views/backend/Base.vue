@@ -611,9 +611,9 @@ export default {
       return new Promise((resolve) => setTimeout(resolve, time));
     },
     openSocket: async function () {
-      const urlwss = "https://api.senderwa.com";
-
-      this.socket = new io(urlwss, {
+      const url_loc = "http://localhost:3333";
+      const url_prod = "https://api.senderwa.com";
+      this.socket = new io(url_prod, {
         autoConnect: true,
       });
 

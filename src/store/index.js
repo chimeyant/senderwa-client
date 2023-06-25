@@ -338,7 +338,7 @@ export default new Vuex.Store({
     CHANNEL_MUTATION: function(state, payload) {
       state.channel = payload;
     },
-    WA_QR_MUTATTION: function(state, payload) {
+    WA_QR_MUTATION: function(state, payload) {
       state.whatsapp.qr.id = payload.id;
       state.whatsapp.qr.src = payload.src;
       state.whatsapp.qr.show = payload.show;
