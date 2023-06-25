@@ -71,8 +71,8 @@
       style="background-color: darkblue;"
     >
       <div style="height: 100px; display: flex;justify-content: center;align-items: center; flex-direction: column; ">
-        <div class="white--text text-center font-weight-bold">SIMPHATI</div>
-        <div class="white--text text-center font-weight-thin body-2">Sistem Informasi Manajemen Pelaporan Tenaga Ahli</div>
+        <div class="white--text text-center font-weight-bold">{{ info.app_name }}</div>
+        <div class="white--text text-center font-weight-thin body-2">{{ info.app_desc }}</div>
       </div>
       <div style="background-color: white; height: 100vh; border-top-left-radius: 15px; border-top-right-radius: 15px; padding-top: 100px;">
         <v-col>
@@ -106,7 +106,7 @@
           >Masuk</v-btn>
         </v-col>
         <v-col class="mt-10">
-          <div class="body-2 font-weight-thin text-center">Copyright &COPY; Dinas Komunikasi Informatika Persandian dan Statistik</div>
+          <div class="body-2 font-weight-thin text-center">Copyright &COPY; {{ info.app_company }}</div>
         </v-col>
       </div>
     </div>
