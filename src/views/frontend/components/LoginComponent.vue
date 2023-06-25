@@ -148,13 +148,7 @@ export default {
           if (this.auth.user.user.authent == "administrator") {
             this.$router.push({ name: "dashboard" });
           }
-          if (this.auth.user.user.authent == "pm") {
-            this.$router.push({ name: "dashboard" });
-          }
-          if (this.auth.user.user.authent == "ta") {
-            this.$router.push({ name: "dashboard" });
-          }
-          if (this.auth.user.user.authent == "tpp") {
+          if (this.auth.user.user.authent == "customer") {
             this.$router.push({ name: "dashboard" });
           }
         } catch (error) {
