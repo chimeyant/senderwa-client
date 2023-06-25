@@ -325,6 +325,13 @@ export default {
     num: 1,
     headers: [
       {
+        text: "WAKTU",
+        align: "start",
+        sortable: false,
+        value: "tanggal",
+        width: 180,
+      },
+      {
         text: "PENGIRIM",
         align: "start",
         sortable: false,
