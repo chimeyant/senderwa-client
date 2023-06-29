@@ -19,6 +19,26 @@
                 >
                   <v-icon
                     :color="theme.mode == 'dark' ? `white` : `black`"
+                    @click="postBulkDeleteRecord"
+                  >mdi-trash</v-icon>
+                </v-btn>
+              </template>
+              <span>Hapus Semua</span>
+            </v-tooltip>
+            <v-tooltip
+              :color="theme.color"
+              bottom
+            >
+              <template v-slot:activator="{ on }">
+                <v-btn
+                  text
+                  small
+                  icon
+                  v-on="on"
+                  v-show="page.actions.add"
+                >
+                  <v-icon
+                    :color="theme.mode == 'dark' ? `white` : `black`"
                     @click="openForm"
                   >add_circle</v-icon>
                 </v-btn>
@@ -452,6 +472,7 @@ export default {
       "postEdit",
       "postUpdate",
       "postConfirmDelete",
+      "postConfrimBulkDelete",
       "assignFileBrowse",
       "setLoading",
       "setRecord",
@@ -489,6 +510,9 @@ export default {
     },
     postDeleteRecord: function (val) {
       this.postConfirmDelete(val);
+    },
+    postBulkDeleteRecord: function () {
+      this.postConfrimBulkDelete();
     },
     postDownload(val) {
       window.open(val, "__blank");
