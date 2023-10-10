@@ -110,11 +110,11 @@
         @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <img
-        src="/images/logo-diskominfo.jpeg"
-        width="54px"
-        height="54px"
+        src="/images/ok.png"
+        width="32px"
+        height="32px"
         alt=""
-        :class="device.desktop ? `mt-2 ml-2 mr-2 `:`ml-2 mr-2 `"
+        :class="device.desktop ? `mt-1 ml-2 mr-2 `:`ml-2 mr-2 `"
       >
 
       <v-toolbar-title
