@@ -418,10 +418,7 @@ export default {
       if (this.search != null) {
         return this.records.filter((item) => {
           return (
-            item.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1 ||
-            item.sender_number
-              .toLowerCase()
-              .indexOf(this.search.toLowerCase()) > -1
+            item.recieve_number.toLowerCase().indexOf(this.search.toLowerCase()) > -1 ||
           );
         });
       } else {
