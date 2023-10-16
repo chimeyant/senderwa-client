@@ -419,7 +419,9 @@ export default {
         return this.records.filter((item) => {
           return (
             item.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1 ||
-            item.nip.toLowerCase().indexOf(this.search.toLowerCase()) > -1
+            item.sender_number
+              .toLowerCase()
+              .indexOf(this.search.toLowerCase()) > -1
           );
         });
       } else {
